@@ -171,23 +171,23 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             welcomeimg = welcomepic(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
-            button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ Aᴅᴅ Mᴇ ๏"
+            button_text = " ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ "
+            add_button_text = "➕ Aᴅᴅ Mᴇ ➕ "
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-ㅤㅤㅤ◦•●◉✿ ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ ✿◉●•◦
-▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+ㅤ ㅤ  ㅤ༐♞ ᴡᴇʟᴄᴏᴍᴇ ༐♞
+▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
 
 ● ɴᴀᴍᴇ ➥  {user.mention}
 ● ᴜsᴇʀɴᴀᴍᴇ ➥  @{user.username}
 ● ᴜsᴇʀ ɪᴅ ➥  {user.id}
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛[🔥︻┻┳═सरकार🔥](https://t.me/ll_SARKAR_MERA_BABU_ll)
-▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+◉ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛[Trojan](https://t.me/YourTrojan)
+▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
